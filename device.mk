@@ -12,12 +12,7 @@ $(call inherit-product, vendor/oneplus/guacamoleb/guacamoleb-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay-bliss
-
-
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # Audio
 PRODUCT_COPY_FILES += \
